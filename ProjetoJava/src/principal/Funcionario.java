@@ -5,6 +5,8 @@ import java.text.NumberFormat;
 import java.util.Locale;
 import java.time.LocalDate;
 
+
+//Creation of the Funcionario class inheriting attributes from Person and adding salary and role attributes
 public class Funcionario extends Pessoa {
     private BigDecimal salario;
     private String funcao;
@@ -27,7 +29,7 @@ public class Funcionario extends Pessoa {
         return funcao;
     }
 
-    // Método para formatar o salário 
+    // Method for formatting salary 
     public String getSalarioFormatado() {
         NumberFormat formatoMoeda = NumberFormat.getCurrencyInstance(Locale.forLanguageTag("pt-BR"));
         return formatoMoeda.format(salario);
