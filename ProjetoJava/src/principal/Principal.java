@@ -1,5 +1,6 @@
 package principal;
 
+//Necessary imports
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.Month;
@@ -11,11 +12,12 @@ import java.util.List;
 import java.util.Map;
 import java.math.RoundingMode;
 
+//Main class to run the application
 public class Principal {
     public static void main(String[] args) {
         List<Funcionario> funcionarios = new ArrayList<>();
 
-        // 3.1 Inserindo todos os funcionários
+        // 3.1 Entering all employees
         funcionarios.add(new Funcionario("Maria", LocalDate.of(2000, 10, 18), new BigDecimal("2009.44"), "Operador"));
         funcionarios.add(new Funcionario("João", LocalDate.of(1990, 5, 12), new BigDecimal("2284.38"), "Operador"));
         funcionarios.add(new Funcionario("Caio", LocalDate.of(1961, 5, 2), new BigDecimal("9836.14"), "Coordenador"));
@@ -27,7 +29,7 @@ public class Principal {
         funcionarios.add(new Funcionario("Heloísa", LocalDate.of(2003, 5, 24), new BigDecimal("1606.85"), "Eletricista"));
         funcionarios.add(new Funcionario("Helena", LocalDate.of(1996, 9, 2), new BigDecimal("2799.93"), "Gerente"));
 
-        // 3.2 Removendo João
+        // 3.2 Remove João
         Funcionario remover = null;
         for (Funcionario f : funcionarios) {
             if (f.getNome().equalsIgnoreCase("João")) {
@@ -59,7 +61,7 @@ public class Principal {
             }
             agrupadosPorFuncao.get(f.getFuncao()).add(f);
         }
-        System.out.println("\n=== Funcionários Agrupados por Função ===");
+        System.out.println("\n============== Funcionários Agrupados por Função ======================");
         for (String funcao : agrupadosPorFuncao.keySet()) {
             System.out.println("Função: " + funcao);
             for (Funcionario f : agrupadosPorFuncao.get(funcao)) {
@@ -103,7 +105,7 @@ public class Principal {
 
         // 3.12 Quantity of minimum wages
         BigDecimal salarioMinimo = new BigDecimal("1212.00");
-        System.out.println("\n=========================== Salários Mínimos por Funcionário =============");
+        System.out.println("\n=========================== Salários Mínimos por Funcionário =========================");
         for (Funcionario f : funcionarios) {
             BigDecimal qtdSalariosMin = f.getSalario().divide(salarioMinimo, 2, RoundingMode.HALF_UP);
             System.out.println(f.getNome() + ": " + qtdSalariosMin + " salários mínimos");
