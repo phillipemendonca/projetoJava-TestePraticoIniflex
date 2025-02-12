@@ -53,8 +53,8 @@ code.
 ```
 ### 3. Compilar e Executar
 No VSCode:
-** Abra a pasta src e navegue até principal/Principal.java
-** Clique em Run no topo do arquivo ou use o atalho ` Ctrl + F5 `.
+- Abra a pasta src e navegue até principal/Principal.java
+- Clique em Run no topo do arquivo ou use o atalho ` Ctrl + F5 `.
 
 
 ## Algumas dificuldades encontradas no desafio
