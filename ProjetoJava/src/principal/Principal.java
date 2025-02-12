@@ -9,6 +9,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.math.RoundingMode;
 
 public class Principal {
     public static void main(String[] args) {
@@ -39,7 +40,7 @@ public class Principal {
         }
 
         // 3.3 Printing all employees
-        System.out.println("\n=== Lista de Funcionários ===");
+        System.out.println("\n==================== Lista de Funcionários =====================");
         for (Funcionario f : funcionarios) {
             System.out.println(f);
         }
@@ -104,7 +105,7 @@ public class Principal {
         BigDecimal salarioMinimo = new BigDecimal("1212.00");
         System.out.println("\n=========================== Salários Mínimos por Funcionário =============");
         for (Funcionario f : funcionarios) {
-            BigDecimal qtdSalariosMin = f.getSalario().divide(salarioMinimo, 2, BigDecimal.ROUND_HALF_UP);
+            BigDecimal qtdSalariosMin = f.getSalario().divide(salarioMinimo, 2, RoundingMode.HALF_UP);
             System.out.println(f.getNome() + ": " + qtdSalariosMin + " salários mínimos");
         }
     }
