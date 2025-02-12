@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
 
+//Declaring the Pessoa class with its attributes and gets and setters
 public class Pessoa {
     private String nome;
     private LocalDate dataNascimento;
@@ -21,12 +22,12 @@ public class Pessoa {
         return dataNascimento;
     }
 
-    // Método para calcular a idade com precisão
+    // Method to calculate age accurately
     public int getIdade() {
         return Period.between(dataNascimento, LocalDate.now()).getYears();
     }
 
-    // Método para formatar a data 
+    // Method to format the date 
     public String getDataNascimentoFormatada() {
         DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         return dataNascimento.format(formato);
