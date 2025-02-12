@@ -8,7 +8,7 @@ Este é um projeto simples em Java que gerencia funcionários de uma indústria,
 
 ---
 
-## 🧾 Funcionalidades Implementadas
+##  Funcionalidades Implementadas
 
 1. **Inserção dos funcionários** na ordem especificada.  
 2. **Remoção do funcionário "João"** da lista.  
@@ -26,7 +26,7 @@ Este é um projeto simples em Java que gerencia funcionários de uma indústria,
 
 ---
 
-## ⚙️ Pré-requisitos
+##  Pré-requisitos
 
 Certifique-se de ter as seguintes ferramentas instaladas:
 - **JDK 17** ou superior ([Download e Instalação](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html))
@@ -37,10 +37,35 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 
 ---
 
-## 🚀 Como Executar o Projeto
+##  Como Executar o Projeto
 
 ### 1. Clonar o Repositório
 Abra o terminal e execute:
 ```bash
 git clone https://github.com/seu-usuario/nome-do-repositorio.git
 cd nome-do-repositorio
+```
+### 2. Abrir o Projeto no VSCode
+No terminal, dentro da página do projeto, abra o VSCode com:
+```
+code.
+
+```
+### 3. Compilar e Executar
+No VSCode:
+** Abra a pasta src e navegue até principal/Principal.java
+** Clique em Run no topo do arquivo ou use o atalho ` Ctrl + F5 `.
+
+
+## Algumas dificuldades encontradas no desafio
+
+Durante o desenvolvimento do projeto foi utilizar algumas bibliotecas e estudar como elas funcionavam como:
+- O ` BigDecimal `, pois a forma de formatação é um pouco confusa.
+- Revisei alguns conceitos de POO como Herança e Poliformismo especialmente como acessar e sobrescrever métodos de uma classe pai(superclasse).
+- Também tive um pouco de dificuldade no uso de ` Map<String> `, precisar entender como armazenar os dados em um mapa, tive que rever os conceitos de manipular e iterar coleções em Java.
+
+
+
+
+
+
