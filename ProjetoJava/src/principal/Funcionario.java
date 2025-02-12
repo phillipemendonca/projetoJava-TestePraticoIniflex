@@ -29,7 +29,7 @@ public class Funcionario extends Pessoa {
 
     // Método para formatar o salário 
     public String getSalarioFormatado() {
-        NumberFormat formatoMoeda = NumberFormat.getCurrencyInstance(new Locale("pt", "BR"));
+        NumberFormat formatoMoeda = NumberFormat.getCurrencyInstance(Locale.forLanguageTag("pt-BR"));
         return formatoMoeda.format(salario);
     }
 
